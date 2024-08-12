@@ -1,0 +1,907 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+
+}
+
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(Assets/BackgroundMacWallaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding-bottom: 2rem;
+    width: 100%;
+
+
+
+}
+
+
+/* Add the following styles to your existing CSS */
+
+#sticky {
+    position: sticky;
+    top: -1px;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    /* Apply blur effect to the navbar */
+}
+
+
+
+
+/*                                   this is the header section including the nav bar links  */
+
+#sticky {
+    background-color: rgb(51, 49, 49);
+    opacity: 0.6;
+
+
+}
+
+#Header-links {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    display: block;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    padding-top: 1rem;
+    position: sticky;
+    padding-bottom: 1rem;
+    padding-top: 0.9rem;
+
+    top: 1%;
+    cursor: default;
+
+
+}
+
+#Header-links a {
+
+    margin: 0.5rem;
+    opacity: 1;
+    color: rgb(195, 188, 188);
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: all 0.5s ease-in-out;
+    position: static;
+    cursor: default;
+    padding-bottom: 2rem;
+
+
+}
+
+#Header-links a:hover {
+
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+    text-decoration: underline;
+    margin: 0.8rem;
+
+}
+
+
+/*                                         code for my name big text in the page h1 tag */
+#my-name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 250%;
+    letter-spacing: 0.1rem;
+    color: white;
+    margin-top: -4.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 8rem;
+
+}
+
+
+
+/*                                                Social media links are these */
+#social-icons {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+#social-icons a {
+    height: 1rem;
+    width: 1rem;
+    display: flex;
+    color: white;
+    margin: 0.5rem;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+#social-icons a:hover {
+
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.732);
+
+
+}
+
+
+
+
+
+/*                                              main section in the html page*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+section:nth-child(2n) {
+    background-color: #f1caca29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#my-image {
+    height: 12rem;
+    width: 11.8rem;
+    margin: auto;
+    margin-top: -25vh;
+    margin-left: 8vw;
+
+
+}
+
+#my-image img {
+    height: 100%;
+    width: 81%;
+    border-radius: 20%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+
+}
+
+#about-para {
+    padding: 1rem;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+
+/*Skills Section*/
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    top: -50px;
+}
+
+#Movement {
+    position: relative;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #bbb8b8 inset;
+
+
+    margin: 30px;
+    overflow: hidden;
+}
+
+
+.skill-progress>div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+
+    vertical-align: bottom;
+    padding: 0.4rem;
+
+    font-weight: 500;
+    text-align: center;
+}
+
+/*                                                      Experience and Education section  */
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+#letsgrowmoreLogo {
+    position: relative;
+    left: 0.2rem;
+}
+
+#internsavy {
+    position: relative;
+    left: -0.2rem;
+
+}
+
+#nitlogo {
+    position: relative;
+    left: -0.2rem;
+    top: 0.2rem;
+
+}
+
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+#experience .timeline-logo {
+    position: absolute;
+    width: 5rem;
+
+
+    overflow: hidden;
+}
+
+#experience .timeline-logo>img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#education .timeline-logo {
+    position: absolute;
+    width: 3.4rem;
+
+
+    overflow: hidden;
+}
+
+#education .timeline-logo>img {
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 140px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+
+.fa-car-side {
+    font-size: 1.5rem;
+}
+
+.fa-plane {
+    font-size: 1.5rem;
+}
+
+
+
+
+/*                                            Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+.portfolio-details p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    padding: 1rem;
+
+}
+
+
+
+
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 2px;
+    border: 2px lightgray;
+    box-shadow: 5px 5px 30px #7d7d7d;
+
+
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+
+
+    box-shadow: 20px 20px 60px #979494, -20px -20px 60px #b4b0b0;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.portfolio-button {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio-button>a {
+    color: white;
+    display: inline-block;
+    height: 1.3rem;
+    padding-bottom: 0.3rem;
+    text-decoration: none;
+    width: 6rem;
+    background-color: transparent;
+    border: 0.15rem solid whitesmoke;
+    border-radius: 0.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: 500;
+
+
+
+}
+
+.portfolio-button>a:hover {
+    font-size: 700;
+}
+
+
+.portfolio-details:hover {
+    background-color: #80808078;
+    color: white;
+    box-shadow: 0 0 30px #5b5d5d;
+    transition: all 0.6s ease-in-out;
+
+    .portfolio-button {
+        display: contents;
+        transition: all 0.6s ease-in-out;
+
+
+    }
+
+}
+
+
+.portfolio-image-container {
+    box-shadow: 0 0 10px #b1b3b3;
+}
+
+
+
+
+
+
+
+
+/* Common Margin Classes */
+
+.mb75px {
+    margin-bottom: 50px;
+
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+
+
+/* setting background-color */
+
+.mb-blue {
+    background-color: #512a72;
+}
+
+.mb-light-blue {
+    background-color: #40c7e1;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #25ba0b;
+}
+
+.mb-light-brown {
+    background-color: #edc618;
+}
+
+
+
+/*Percentage Classes */
+
+.hundred-percent {
+    height: inherit;
+    width: 100%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+
+.ninety_five {
+    height: inherit;
+    width: 95%;
+}
+
+.twenty_two {
+    height: inherit;
+    width: 22%;
+
+}
+
+
+
+
+
+
+/*                                             this section is about the contact form */
+
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.horizontal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+
+    padding-top: 1rem;
+
+
+}
+
+.horizontal-list a {
+    color: white;
+    margin: 2rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+.horizontal-list a:hover {
+    color: white;
+    margin: 2rem;
+
+
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.732);
+
+
+}
+
+
+
+
+
+/* Common Text Align Classes */
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Common Margin Classes */
+
+
+.mt50px {
+    margin-top: 50px;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+/* section of the media queries */
+
+
+
+@media only screen and (max-width: 572px) {
+
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+
+
+    .nav-menu {
+        display: none;
+    }
+
+    .horizontal-list a {
+        margin: 1rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .timeline-box::after {
+        left: -9.2% !important;
+    }
+
+    #timeline-divider {
+        top: 10%;
+        left: 2%;
+    }
+
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    }
+
+    #my-details-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+}
